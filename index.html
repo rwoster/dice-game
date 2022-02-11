@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>dice game</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="title">it's a race to 21!</h1>
+            <h2 id="message" class=""></h2>
+
+            <div class="players">
+                <div id="player1" class="">
+                    <h1>
+                        Score:
+                        <span id="player1Scoreboard" class="">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice active">4</div>
+                </div>
+                <div id="player2" class="">
+                    <h1>
+                        Score:
+                        <span id="player2Scoreboard" class="">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice">-</div>
+                </div>
+            </div>
+            <div class="p1-history">
+                <h4>
+                    Previous <br />
+                    Rolls
+                </h4>
+                <ul id="p1-hist-li"></ul>
+            </div>
+            <div class="p2-history">
+                <h4>
+                    Previous <br />
+                    Rolls
+                </h4>
+                <ul id="p2-hist-li"></ul>
+            </div>
+
+            <div class="btn-container">
+                <button id="goes-first-btn">Who goes first?</button>
+                <button id="roll-btn">Roll Dice 🎲</button>
+                <button id="reset-btn">Reset Game 🔁</button>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
